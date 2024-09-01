@@ -50,6 +50,9 @@ describe("EA Website Tests", () => {
     const loginPage = new LoginPage();
     loginPage.login("admin", "password");
 
+    // Assert
+    loginPage.manageUsers.should("be.visible");
+
     cy.log("Test3 completed");
   });
 
