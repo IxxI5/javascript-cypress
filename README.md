@@ -85,23 +85,45 @@ After downloading the javascript-cypress repository, follow these steps:
   }
   ```
 
+- **Configure** the **cypress.config.js**
+
+  If the **cypress.config.js** file is missing, please create it in the **/cypress-project/** directory having the following content:
+
+  ```javascript
+  // cypress.config.js
+  const { defineConfig } = require("Cypress");
+
+  module.exports = defineConfig({
+    e2e: {
+      baseUrl: "http://example.com",
+      defaultCommandTimeout: 6000,
+      video: true,
+      screenshotOnRunFailure: true,
+      specPattern: "cypress/integration/*_/_.spec.js",
+      env: {
+        apiURL: "http://example.com/api",
+      },
+    },
+  });
+  ```
+
 - **Check** the **package.json**
 
   ```javascript
   {
-    "name": "cypress-project",
-    "version": "1.0.0",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "MIT",
-    "description": "",
-    "devDependencies": {
-        "cypress": "^13.14.1"
-    }
+  "name": "cypress-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+      "cypress": "^13.14.1"
+  }
   }
   ```
 
