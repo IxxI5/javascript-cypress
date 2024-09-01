@@ -62,7 +62,8 @@ After downloading the javascript-cypress repository, follow these steps:
 
   npm install cypress --save-dev          // install cypress as dev dependency
 
-  npx cypress open                        // opens Cypress for the first time to generate the necessary files
+  npx cypress open                        // opens Cypress for the first time to generate the
+                                          // necessary files
   ```
 
 - **Cypress UI**
