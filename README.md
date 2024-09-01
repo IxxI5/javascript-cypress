@@ -111,19 +111,19 @@ After downloading the javascript-cypress repository, follow these steps:
 
   ```javascript
   {
-  "name": "cypress-project",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "description": "",
-  "devDependencies": {
-      "cypress": "^13.14.1"
-  }
+    "name": "cypress-project",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "description": "",
+    "devDependencies": {
+        "cypress": "^13.14.1"
+    }
   }
   ```
 
