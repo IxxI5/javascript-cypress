@@ -1,6 +1,9 @@
 # temp files
 temp/
 
+# package-lock.json
+package-lock.json
+
 # Node modules
 node_modules/
 
